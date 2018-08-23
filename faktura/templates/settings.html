@@ -1,0 +1,99 @@
+{% extends "layout.html" %} {% block content %}
+<div class="content-section">
+
+    <form method="POST" action="">
+        <legend class="border-bottom mb-4">Site settings</legend>
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <div class="form-group">
+                {{ form.companyName.label(class="form-control-label") }} {% if form.companyName.errors %} {{form.companyName(class="form-control
+                form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.companyName.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %} {{form.companyName(class="form-control form-control-lg") }} {% endif %}
+
+
+            </div>
+            <div class="form-group">
+                {{ form.companyCity.label(class="form-control-label") }} {% if form.companyCity.errors %} {{form.companyCity(class="form-control
+                form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.companyCity.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %} {{form.companyCity(class="form-control form-control-lg") }} {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.companyZip.label(class="form-control-label") }} {% if form.companyZip.errors %} {{form.companyZip(class="form-control
+                form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.companyZip.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %} {{form.companyZip(class="form-control form-control-lg") }} {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.companyAddress.label(class="form-control-label") }} {% if form.companyAddress.errors %} {{form.companyAddress(class="form-control
+                form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.companyAddress.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %} {{form.companyAddress(class="form-control form-control-lg") }} {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.companyEmail.label(class="form-control-label") }} {% if form.companyEmail.errors %} {{form.companyEmail(class="form-control
+                form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.companyEmail.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %} {{form.companyEmail(class="form-control form-control-lg") }} {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.companyPhone.label(class="form-control-label") }} {% if form.companyPhone.errors %} {{form.companyPhone(class="form-control
+                form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.companyPhone.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %} {{form.companyPhone(class="form-control form-control-lg") }} {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.companyMobile.label(class="form-control-label") }} {% if form.companyMobile.errors %} {{form.companyMobile(class="form-control
+                form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.companyMobile.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %} {{form.companyMobile(class="form-control form-control-lg") }} {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.companyNumber.label(class="form-control-label") }} {% if form.companyNumber.errors %} {{form.companyNumber(class="form-control
+                form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.companyNumber.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %} {{form.companyNumber(class="form-control form-control-lg") }} {% endif %}
+            </div>
+
+        </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-outline-info") }}
+        </div>
+
+    </form>
+</div>
+
+{% endblock content %}
