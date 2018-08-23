@@ -1,6 +1,6 @@
 ### Description
 
-web-faktura is an web-based invoice application based on the flask framework, created for learning purposes
+web-invoice is an web-based invoice application based on the flask framework, created for learning purposes
 
 ### Requirements
 
