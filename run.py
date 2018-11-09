@@ -1,4 +1,4 @@
-from models import Customer, Inventory
+from faktura.models import Customer, Inventory
 
 
 from faktura import app
