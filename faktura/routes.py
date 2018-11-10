@@ -139,3 +139,10 @@ def newItem():
         return redirect(url_for('newItem'))
 
     return render_template('newItem.html', form=form)
+
+
+@app.route("/invoice/new", methods=['GET', 'POST'])
+def newInvoice():
+    form = InvoiceRegistration()
+    if form.validate_on_submit():
+        newInvoice = Invoice(customer_name=form.customer_name)

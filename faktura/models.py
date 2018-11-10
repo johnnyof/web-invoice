@@ -24,8 +24,7 @@ class Inventory(db.Model):
 
 class Invoice(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    first_name = db.Column(db.String(20), nullable=False)
-    last_name = db.Column(db.String(20), nullable=False)
+    customerId = db.Column(db.Integer, ForeignKey("Customer.id"))
     email = db.Column(db.String(20), unique=True, nullable=False)
     phone_number = db.Column(db.String(20), nullable=False)
 

@@ -9,11 +9,18 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous"> {% if title %}
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/faktura/static/style.css">     {% if title %}
     <title>Flask blog - {{title}}</title>
     {% else %}
     <title>Flask blog</title>
     {% endif %}
+    <style>
+        body {
+            background-color: darkgray;
+        }
+        </style>
+        
 
 </head>
 
